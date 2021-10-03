@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Controller\Patterns\Builder\Auction;
-use App\Controller\Patterns\Builder\CAuction;
+use App\Controller\Patterns\Builder\AuctionC;
 
 class BuilderPatternController extends AbstractController
 {
