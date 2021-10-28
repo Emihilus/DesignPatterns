@@ -1,27 +1,7 @@
 <?php 
 
-namespace App\Controller\Patterns\Builder;
+namespace App\Controller\Patterns\Builder\Second;
 
-class AuctionC
-{
-    public function printSelf()
-    {
-        print 'msg';
-    }
-}
-
-interface Builder
-{
-    public function setType($type): self;
-    public function setTitle($title): self;
-    public function setDescription($description): self;
-    public function setOwner($owner): self;
-    public function setStartingPrice($startingPrice): self;
-    public function setMainImgPath($mainImgPath): self;
-    public function setOffers($offers): self;
-
-    public function build(): AuctionC;
-}
 
 class AuctionCBuilder implements Builder
 {
@@ -126,24 +106,4 @@ class AuctionCBuilder implements Builder
         return $result;
     }
 
-}
-
-class AuctionCDirector
-{
-    private Builder $builder;
-
-    public function setBuilder(Builder $builder)
-    {
-        $this->builder = $builder;
-    }
-
-    public function buildPiecWendzarniczy(): void
-    {
-        $this->builder->setType(0);
-    }
-
-    public function buildLaptop(): void
-    {
-        $this->builder->setType(1);
-    }
 }

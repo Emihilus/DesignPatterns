@@ -23,7 +23,7 @@ class SingletonPatternController extends AbstractController
 
 
         return $this->render('patterns/builder.html.twig', [
-            'controller_name' => 'BuilderPatternController',
+            'controller_name' => 'Singleton PatternController',
         ]);
     }
 }

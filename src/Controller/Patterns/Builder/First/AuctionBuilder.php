@@ -1,16 +1,6 @@
 <?php
 
-namespace App\Controller\Patterns\Builder;
-
-class Auction
-{
-    /* private string $title; // req
-    private string $description; // req
-    private string $mainImgPath;
-    private int $startingPrice; // req
-    private $offers;
-    private string $owner; // req*/
-}
+namespace App\Controller\Patterns\Builder\First;
 
 class AuctionBuilder
 {

@@ -2,11 +2,13 @@
 
 namespace App\Controller\Patterns\Builder;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use App\Controller\Patterns\Builder\Auction;
-use App\Controller\Patterns\Builder\AuctionC;
+use App\Controller\Patterns\Builder\First\AuctionBuilder;
+use App\Controller\Patterns\Builder\Second\AuctionCBuilder;
+use App\Controller\Patterns\Builder\Second\AuctionCDirector;
+use App\Controller\Patterns\Builder\First\AuctionBuilderBetter;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class BuilderPatternController extends AbstractController
 {
