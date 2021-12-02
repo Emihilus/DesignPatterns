@@ -2,7 +2,6 @@
 
 namespace App\Controller\Patterns\Flyweight\Classes;
 
-use App\Controller\Patterns\FLyweight\FlyweightPatternController;
 
 abstract class ChessPiece
 {
@@ -21,8 +20,7 @@ abstract class ChessPiece
         $this->name = $name;
         $this->numberPosition = $numberPosition;
         $this->letterPosition = $letterPosition;
-        switch($color)
-        {
+        switch ($color) {
             case 'white':
                 $this->color = ColorRepository::getWhite();
                 break;
@@ -35,6 +33,6 @@ abstract class ChessPiece
 
     public function printSelf()
     {
-        FlyweightPatternController::$output .= "<span style='color:rgb(".$this->color->getRed().", ".$this->color->getGreen().", ".$this->color->getBlue().");'>Name: ".$this->name.", Position: ".$this->numberPosition.$this->letterPosition."</span><br>";
+        FlyweightPatternController::$output .= "<span style='color:rgb(" . $this->color->getRed() . ", " . $this->color->getGreen() . ", " . $this->color->getBlue() . ");'>Name: " . $this->name . ", Position: " . $this->numberPosition . $this->letterPosition . "</span><br>";
     }
 }
