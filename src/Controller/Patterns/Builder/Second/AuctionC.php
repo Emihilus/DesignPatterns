@@ -6,6 +6,6 @@ class AuctionC
 {
     public function printSelf()
     {
-        print 'msg';
+        var_dump(get_object_vars($this));
     }
 }

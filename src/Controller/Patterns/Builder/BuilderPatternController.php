@@ -24,8 +24,9 @@ class BuilderPatternController extends AbstractController
         ->owner('Maciej')
         ->mainImgPath('c:/windows');
         $auction = $auctionBuilder->build();
+        var_dump($auction);
 
-        dump($auction);
+        //dump($auction);
         
         $auctionBuilderBetter = new AuctionBuilderBetter();
         $auction2 = $auctionBuilderBetter->title('Marcin')
@@ -35,7 +36,7 @@ class BuilderPatternController extends AbstractController
         ->owner('Andariusz')
         ->build();
          var_dump($auction2);
-        dump($auction2);
+        //dump($auction2);
 
         //  With director
         $auctionCBuilder = new AuctionCBuilder;
@@ -53,7 +54,7 @@ class BuilderPatternController extends AbstractController
         $auctionC = $auctionCBuilder->build();
         $auctionC->printSelf();
 
-        dump($auctionC);
+        //dump($auctionC);
 
         $acDirector->buildLaptop();
         $auctionCBuilder->setTitle('LAptop acre nitrous oxide')
@@ -66,7 +67,7 @@ class BuilderPatternController extends AbstractController
         $auctionC2 = $auctionCBuilder->build();
 
         $auctionC2->printSelf();
-        dump($auctionC2);
+        //dump($auctionC2);
 
 
         return $this->render('patterns/builder.html.twig', [

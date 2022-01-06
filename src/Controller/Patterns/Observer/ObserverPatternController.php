@@ -14,7 +14,6 @@ class ObserverPatternController extends AbstractController
 {
     public static string $output = '';
 
-
     /**
      * @Route("/observer-pattern", name="observer-pattern")
      */

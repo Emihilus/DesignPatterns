@@ -2,6 +2,8 @@
 
 namespace App\Controller\Patterns\Flyweight\Classes;
 
+use App\Controller\Patterns\Flyweight\FlyweightPatternController;
+
 
 abstract class ChessPiece
 {

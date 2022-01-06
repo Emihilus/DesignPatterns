@@ -1,0 +1,13 @@
+.
+├── Classes
+│   ├── InternetNews.php
+│   ├── RadioNews.php
+│   ├── TvNews.php
+│   └── WeatherForecast.php
+├── Interfaces
+│   ├── Observable.php
+│   └── Observer.php
+├── ObserverPatternController.php
+└── super.txt
+
+2 directories, 8 files
